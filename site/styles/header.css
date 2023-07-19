@@ -1,71 +1,31 @@
 header {
-  background: url("../images/food.jpg") bottom;
+  background: url("../images/food.jpg");
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.headerWrapper {
+  backdrop-filter: brightness(0.8) blur(2px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100dvh - 56px);
 }
 
 .logoWrapper {
-  padding: 64px 32px;
-  backdrop-filter: brightness(0.8) blur(2px);
+  padding: 16px;
   display: flex;
   justify-content: center;
 }
 
 .logoLink {
   padding: 16px;
-  transition: scale 240ms ease-in-out;
-}
-
-.logoLink:hover {
-  scale: 1.2;
-}
-
-.logoLink:hover:not(:active) {
-  scale: 1.22;
-}
-
-.name {
-  font-size: 20px;
-  line-height: 24px;
-  margin: 0 0 24px;
-}
-
-.jobTitle {
-  font-size: 16px;
-  opacity: 0.6;
-}
-
-.personal {
-  display: flex;
-  flex: 0 0 fit-content;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-}
-
-.info {
-  text-align: right;
-  margin: 0 32px 0 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact {
-  font-size: 16px;
-  line-height: 24px;
-  font-style: normal;
-}
-
-.avatar {
-  height: 64px;
-  width: 64px;
-  border-radius: 50%;
-  background: #afafaf;
-  border: 2px solid #444;
+  scale: 0.5;
 }
 
 nav {
-  position: absolute;
+  top: calc(100% - 56px);
   position: sticky;
-  top: 0;
   z-index: 1000;
 }
 
@@ -74,16 +34,12 @@ nav {
   align-items: center;
   justify-content: center;
   background: #fff;
-  background-size: cover;
   padding: 4px 0;
   width: 100dvw;
-  border-bottom: solid 3px #fff;
-  border-top: solid 3px #fff;
 }
 
 .listWrapper {
   max-width: 1456px;
-  margin: 0 16px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -103,16 +59,16 @@ nav {
 }
 
 .navigation li a {
-  margin: 0 8px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 100%;
-  padding: 0 16px;
-  height: 56px;
-  font-size: 28px;
-  line-height: 32px;
+  margin: 0 4px;
+  padding: 0 4px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 20px;
   color: #420;
   text-decoration: none;
   transition: scale 120ms ease-in-out, background-color 120ms ease-in-out;
@@ -129,4 +85,121 @@ nav {
 .navigation li a:hover:not(:active) {
   scale: 1.08;
   background-color: #ffd780bb;
+}
+
+.lead {
+  max-width: 1000px;
+  padding: 32px;
+  padding-bottom: 50%;
+  color: #fff;
+  align-self: center;
+}
+
+.lead-none {
+  display: none;
+}
+
+.leadText {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+  padding: 0 0 32px;
+  text-shadow: 0 0 6px #000a, 0 0 16px #0004;
+}
+
+.name {
+  font-size: 20px;
+  line-height: 24px;
+  opacity: 0.9;
+}
+
+.jobTitle {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.personal {
+  display: flex;
+  flex: 0 0 fit-content;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.info {
+  text-align: right;
+  margin: 0 16px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background: #777;
+  border: 2px solid #afafaf;
+}
+
+@media screen and (min-width: 768px) {
+  .lead {
+    padding: 32px 64px 32px;
+  }
+
+  .logoWrapper {
+    padding: 64px 32px;
+    background: #0002;
+  }
+
+  .logoLink {
+    scale: 1;
+    transition: scale 240ms ease-in-out;
+  }
+
+  .logoLink:hover {
+    scale: 1.2;
+  }
+
+  .logoLink:hover:not(:active) {
+    scale: 1.22;
+  }
+
+  header {
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .headerWrapper {
+    min-height: 70dvh;
+  }
+
+  nav {
+    top: 0;
+  }
+
+  .nav {
+    border-bottom: solid 3px #fff;
+    border-top: solid 3px #fff;
+  }
+
+  .navigation li a {
+    margin: 0 8px;
+    padding: 0 16px;
+    height: 56px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .listWrapper {
+    margin: 0 16px;
+  }
 }
