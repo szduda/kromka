@@ -4,12 +4,11 @@ body {
   padding: 0;
   image-rendering: -webkit-optimize-contrast;
   -webkit-font-smoothing: antialiased;
+  width: 100vh;
 }
 
 body {
   background: #f2f5de;
-  background-size: cover;
-  background-attachment: fixed;
   overflow-x: hidden;
   overflow-y: scroll;
 }
