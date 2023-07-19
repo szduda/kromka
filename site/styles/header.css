@@ -24,7 +24,7 @@ header {
 }
 
 nav {
-  top: calc(100% - 56px);
+  top: calc(100dvh - 56px);
   position: sticky;
   z-index: 1000;
 }
