@@ -4,7 +4,7 @@
   "scripts": {
     "start": "parcel",
     "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build --public-url ./kromka/",
+    "build": "parcel build --public-url .",
     "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
