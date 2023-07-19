@@ -1,7 +1,7 @@
 footer {
   border-top: 4px solid #444;
   background: #000e;
-  padding: 56px 32px;
+  padding: 32px 0 112px;
 }
 
 footer > * {
@@ -10,14 +10,15 @@ footer > * {
 
 .footerWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .footerCol {
   display: flex;
   flex-direction: column;
   flex: 1;
+  padding: 24px;
 }
 
 .footerCol.left {
@@ -25,5 +26,23 @@ footer > * {
 }
 
 .footerLogo {
-  padding: 0 64px;
+  padding: 24px 24px 0;
+  height: 172px;
+  width: min-content;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 56px 0 32px;
+  }
+
+  .footerWrapper {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .footerLogo {
+    padding: 0 64px 24px;
+  }
 }
