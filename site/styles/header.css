@@ -25,7 +25,7 @@ header {
 
 nav {
   top: calc(100dvh - 56px);
-  position: sticky;
+  position: fixed;
   z-index: 1000;
 }
 
@@ -184,6 +184,7 @@ nav {
 
   nav {
     top: 0;
+    position: sticky;
   }
 
   .nav {
