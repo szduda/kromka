@@ -24,7 +24,7 @@ header {
 }
 
 nav {
-  top: calc(100dvh - 56px);
+  bottom: 0;
   position: fixed;
   z-index: 1000;
 }
