@@ -1,0 +1,132 @@
+header {
+  background: url("../images/food.jpg") bottom;
+}
+
+.logoWrapper {
+  padding: 64px 32px;
+  backdrop-filter: brightness(0.8) blur(2px);
+  display: flex;
+  justify-content: center;
+}
+
+.logoLink {
+  padding: 16px;
+  transition: scale 240ms ease-in-out;
+}
+
+.logoLink:hover {
+  scale: 1.2;
+}
+
+.logoLink:hover:not(:active) {
+  scale: 1.22;
+}
+
+.name {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 24px;
+}
+
+.jobTitle {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.personal {
+  display: flex;
+  flex: 0 0 fit-content;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.info {
+  text-align: right;
+  margin: 0 32px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background: #afafaf;
+  border: 2px solid #444;
+}
+
+nav {
+  position: absolute;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  background-size: cover;
+  padding: 4px 0;
+  width: 100dvw;
+  border-bottom: solid 3px #fff;
+  border-top: solid 3px #fff;
+}
+
+.listWrapper {
+  max-width: 1456px;
+  margin: 0 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navigation li {
+  flex: 1;
+}
+
+.navigation li a {
+  margin: 0 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 16px;
+  height: 56px;
+  font-size: 28px;
+  line-height: 32px;
+  color: #420;
+  text-decoration: none;
+  transition: scale 120ms ease-in-out, background-color 120ms ease-in-out;
+  border-radius: 16px;
+  text-shadow: 0 1px 8px #fff;
+}
+
+.navigation li a.active,
+.navigation li a:hover {
+  scale: 1.05;
+  background-color: #ffd780;
+}
+
+.navigation li a:hover:not(:active) {
+  scale: 1.08;
+  background-color: #ffd780bb;
+}

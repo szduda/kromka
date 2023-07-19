@@ -1,0 +1,29 @@
+footer {
+  border-top: 4px solid #444;
+  background: #000e;
+  padding: 56px 32px;
+}
+
+footer > * {
+  color: #f2f5deaa;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footerCol.left {
+  text-align: right;
+}
+
+.footerLogo {
+  padding: 0 64px;
+}

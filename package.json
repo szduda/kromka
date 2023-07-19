@@ -1,0 +1,12 @@
+{
+  "name": "kromka-zdrowia",
+  "source": "site/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --public-url ./"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "posthtml-modules": "^0.9.1"
+  }
+}

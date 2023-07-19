@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #f2f5de;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 1200px;
+}
+
+a.link,
+a.link:visited {
+  display: inline-block;
+  color: #9fb50e;
+  transition: scale 120ms ease-in-out, opacity 120ms ease-in-out;
+}
+
+a.link:hover {
+  opacity: 0.6;
+}
+
+a.link:hover:not(:active) {
+  scale: 1.02;
+  opacity: 0.8;
+}
