@@ -1,6 +1,6 @@
 article {
   width: 100%;
-  margin: 40px 24px;
+  padding: 40px 24px;
 }
 
 .articleImage {
@@ -15,7 +15,7 @@ aside {
 @media screen and (min-width: 768px) {
 
   article {
-    margin: 128px 0 256px max(calc(50vw - 720px), 32px);
+    padding: 128px 0 256px max(calc(50vw - 720px), 32px);
     max-width: 800px;
     width: calc(67vw - 72px);
   }
