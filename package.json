@@ -3,10 +3,13 @@
   "source": "site/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url ./"
+    "prebuild": "shx rm -rf dist/*",
+    "build": "parcel build --public-url ./",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
     "parcel": "^2.9.3",
-    "posthtml-modules": "^0.9.1"
+    "posthtml-modules": "^0.9.1",
+    "shx": "^0.3.4"
   }
 }
