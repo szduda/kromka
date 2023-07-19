@@ -5,7 +5,8 @@
     "start": "parcel",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build --public-url .",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
+    "deploy": "yarn build && yarn push-gh-pages"
   },
   "devDependencies": {
     "parcel": "^2.9.3",
