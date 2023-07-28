@@ -1,5 +1,11 @@
 header {
-  background: url("../images/food.jpg");
+  background-image: radial-gradient(
+      ellipse at center,
+      #0008 0%,
+      #0006 50%,
+      transparent 100%
+    ),
+    url("../images/food.jpg");
   background-position: bottom left;
   background-size: cover;
 }
@@ -190,6 +196,13 @@ nav {
   }
 
   header {
+    background-image: radial-gradient(
+      ellipse at bottom,
+      #0008 0%,
+      #0002 50%,
+      transparent 100%
+    ),
+    url("../images/food.jpg");
     background-position: bottom;
     background-size: cover;
   }
