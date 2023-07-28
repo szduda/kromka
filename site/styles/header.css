@@ -135,12 +135,6 @@ nav {
   flex-direction: column;
 }
 
-.contact {
-  font-size: 16px;
-  line-height: 24px;
-  font-style: normal;
-}
-
 .avatar {
   height: 64px;
   width: 64px;
@@ -175,10 +169,6 @@ nav {
   header {
     background-position: bottom;
     background-size: cover;
-  }
-
-  .headerWrapper {
-    min-height: 70dvh;
   }
 
   nav {

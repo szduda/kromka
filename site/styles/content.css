@@ -12,23 +12,11 @@ aside {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-
-  article {
-    padding: 128px 0 256px max(calc(50vw - 720px), 32px);
-    max-width: 800px;
-    width: calc(67vw - 72px);
-  }
-
-  aside {
-    display: block;
-    top: 0;
-    right: 0;
-    width: 33vw;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-  }
+h2 small, h3 small {
+  font-size: 24px;
+  line-height: 64px;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
 }
 
 .row {
@@ -51,7 +39,6 @@ h2 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 300;
-  max-width: 80%;
   letter-spacing: -0.04em;
 }
 
@@ -65,8 +52,38 @@ h3 {
   line-height: 36px;
 }
 
+h4 {
+  font-size: 28px;
+  line-height: 36px;
+  font-variant: all-small-caps;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+}
+
 p {
   margin: 24px 0 0;
   font-size: 20px;
   line-height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    padding: 128px 0 256px max(calc(50vw - 720px), 32px);
+    max-width: 800px;
+    width: calc(67vw - 72px);
+  }
+
+  aside {
+    display: block;
+    top: 0;
+    right: 0;
+    width: 33vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    max-width: 80%;
+  }
 }

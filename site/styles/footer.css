@@ -12,6 +12,14 @@ footer > * {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: larger;
+}
+.contact {
+  font-style: normal;
+}
+
+.footerWrapper small {
+  opacity: 0.6;
 }
 
 .footerCol {
@@ -40,6 +48,8 @@ footer > * {
   .footerWrapper {
     flex-direction: row;
     align-items: flex-end;
+    margin: 0 auto;
+    max-width: 1488px;
   }
 
   .footerLogo {
