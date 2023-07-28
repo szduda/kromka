@@ -128,6 +128,29 @@ nav {
   width: 100%;
 }
 
+.buttonLink {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: all 240ms ease-in-out;
+  border-radius: 32px;
+  padding-left: 24px;
+}
+
+.buttonLink:hover {
+  scale: 1.05;
+}
+
+.buttonLink:hover:not(:active) {
+  scale: 1.1;
+  background: #0004;
+}
+
 .info {
   text-align: right;
   margin: 0 16px 0 0;
