@@ -1,6 +1,6 @@
 article {
   width: 100%;
-  padding: 40px 24px;
+  padding: 40px 24px 64px;
 }
 
 .articleImage {
@@ -113,6 +113,7 @@ p {
     display: grid;
     row-gap: 32px;
     max-width: 640px;
+    margin: 32px 0;
   }
 
   h2 {

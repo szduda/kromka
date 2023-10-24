@@ -1,6 +1,5 @@
 .lead {
   max-width: 1000px;
-  padding-bottom: 64px;
   align-self: center;
 }
 
@@ -49,7 +48,6 @@
   width: 64px;
   border-radius: 50%;
   background: #777;
-  border: 2px solid #afafaf;
 }
 
 @media screen and (min-width: 768px) {
