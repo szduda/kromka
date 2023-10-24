@@ -5,7 +5,7 @@ footer {
 }
 
 footer > * {
-  color: #f2f5deaa;
+  color: #f2f5deaa !important;
 }
 
 .footerWrapper {
@@ -47,7 +47,6 @@ footer > * {
 
   .footerWrapper {
     flex-direction: row;
-    align-items: flex-end;
     margin: 0 auto;
     max-width: 1488px;
   }

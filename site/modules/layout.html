@@ -13,42 +13,22 @@
     <link rel="stylesheet" type="text/css" href="./styles/base.css" />
     <link rel="stylesheet" type="text/css" href="./styles/header.css" />
     <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/lead.css" />
     <link rel="stylesheet" type="text/css" href="./styles/content.css" />
   </head>
   <body>
     <header>
-      <div class="headerWrapper">
-        <div class="logoWrapper">
-          <a href="/kromka" class="logoLink">
-            <img src="images/logo.svg" class="logo" />
-          </a>
-        </div>
-        <div class="lead lead-{{ lead }}">
-          <p class="leadText">
-            Moim zamiłowaniem jest medycyna żywieniowa. Pomagam zrozumieć
-            zdrowym i chorym pacjentom jak pozytywny wpływ na ich życie mają
-            dobre nawyki żywieniowe.
-          </p>
-          <div class="personal">
-            <a href="/o-mnie" class="buttonLink">
-              <div class="info">
-                <strong class="name">Monika Śmietana</strong>
-                <span class="jobTitle">dietetyk kliniczny i dziecięcy</span>
-              </div>
-              <img src="images/avatar.png" class="avatar" />
-            </a>
-          </div>
-        </div>
-      </div>
+      <a href="/kromka" class="logoLink">
+        <img src="images/logo.svg" class="logo" />
+      </a>
     </header>
     <nav>
       <div class="nav">
         <div class="listWrapper">
           <ul class="navigation">
             <li><a href="oferta.html">Oferta</a></li>
-            <li><a href="#">Dietetyka</a></li>
-            <li><a href="#">Strefa Rodzica</a></li>
-            <li><a href="#">O Mnie</a></li>
+            <li><a href="index.html">O Mnie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -60,15 +40,28 @@
       <div class="footerWrapper">
         <div class="footerCol">
           <strong>Monika Śmietana</strong>
-          <div>tel. <small>+48</small> 796 611 604</div>
-          <div>kontakt.kromkazdrowia@gmail.com</div>
+          <a href="tel:+48794611604" style="margin-top: 16px"
+            ><small class="dim">tel. +48</small> 794 611 604</a
+          >
+          <a
+            href="mailto:kontakt.kromkazdrowia@gmail.com"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 16px;
+              align-items: center;
+            "
+          >
+            <span>kontakt.kromkazdrowia</span
+            ><span class="dim">@gmail.com</span>
+          </a>
         </div>
         <div class="footerCol">
           <strong>Gabinet przyjeć</strong>
-          <address class="contact">
+          <address class="contact" style="margin-top: 16px">
             28 Pułku Artylerii Lekkiej 7A<br />
-            26-922 Zajezierze<br />
-            budynek przychodni Eltermed
+            26-922 Zajezierze k. Dęblina
+            <p>budynek przychodni Eltermed</p>
           </address>
         </div>
         <img src="images/logo-min.svg" class="footerLogo" />

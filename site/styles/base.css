@@ -26,18 +26,17 @@ main {
   min-height: 1200px;
 }
 
+a,
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 a.link,
 a.link:visited {
   display: inline-block;
   color: #9fb50e;
-  transition: scale 120ms ease-in-out, opacity 120ms ease-in-out;
-}
-
-a.link:hover {
-  opacity: 0.6;
-}
-
-a.link:hover:not(:active) {
-  scale: 1.02;
-  opacity: 0.8;
 }

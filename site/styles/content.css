@@ -4,15 +4,27 @@ article {
 }
 
 .articleImage {
-  width: auto;
-  max-width: 640px;
+  display: flex;
+  width: 100%;
+  max-width: min(100%, 640px);
+  height: 640px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.articleImage__mobile {
+  margin: 96px -24px 0;
+  width: 100dvw;
+  max-width: 100dvw;
+  height: 320px;
 }
 
 aside {
   display: none;
 }
 
-h2 small, h3 small {
+h2 small,
+h3 small {
   font-size: 24px;
   line-height: 64px;
   letter-spacing: 0.04em;
@@ -21,9 +33,8 @@ h2 small, h3 small {
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
-  overflow: hidden;
 }
 
 h1 {
@@ -66,23 +77,59 @@ p {
   line-height: 32px;
 }
 
+.box {
+  width: min(100dvw, 640px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 24px;
+  font-size: 24px;
+}
+
+.boxTower {
+  display: grid;
+  row-gap: 32px;
+}
+
 @media screen and (min-width: 768px) {
   article {
-    padding: 128px 0 256px max(calc(50vw - 720px), 32px);
+    flex: 3 1;
+    padding: 64px;
     width: calc(67vw - 72px);
+    max-width: 960px;
+  }
+
+  .articleImage__mobile {
+    display: none;
+  }
+
+  .desktopHidden {
+    display: none;
   }
 
   aside {
-    display: block;
-    top: 0;
-    right: 0;
-    width: 33vw;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+    flex: 1 1;
+    overflow: hidden;
+    display: grid;
+    row-gap: 32px;
+    max-width: 640px;
   }
 
   h2 {
     max-width: 80%;
   }
+
+  .box {
+    height: 640px;
+    padding: 0 32px 0 64px;
+    font-size: 30px;
+  }
+}
+
+.dim {
+  opacity: 0.5;
+}
+
+.imageLink:hover {
+  filter: brightness(0.8);
 }
