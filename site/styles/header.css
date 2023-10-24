@@ -5,7 +5,7 @@ header {
       #0006 50%,
       transparent 100%
     ),
-    url("../images/food.jpg");
+    url("../images/food.webp");
   background-position: center center;
   background-size: cover;
   height: 61dvh;
