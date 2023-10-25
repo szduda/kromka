@@ -31,9 +31,9 @@
       <div class="nav">
         <div class="listWrapper">
           <ul class="navigation">
-            <li><a href="index.html">O Mnie</a></li>
-            <li><a href="oferta.html">Oferta</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="index.html" class="js-navLink">O Mnie</a></li>
+            <li><a href="oferta.html" class="js-navLink">Oferta</a></li>
+            <li><a href="kontakt.html" class="js-navLink">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -62,7 +62,7 @@
           </a>
         </div>
         <div class="footerCol">
-          <strong>Gabinet przyjeć</strong>
+          <strong>Gabinet przyjęć</strong>
           <address class="contact" style="margin-top: 16px">
             28 Pułku Artylerii Lekkiej 7A<br />
             26-922 Zajezierze k. Dęblina
@@ -78,5 +78,17 @@
         />
       </div>
     </footer>
+    <script lang="javascript">
+      (function () {
+        document
+          .querySelectorAll(".js-navLink")
+          .forEach((link) => {
+            if (link.pathname == window.location.pathname
+            || (['/', ''].includes(window.location.pathname) && link.pathname==="/index.html")) {
+                link.classList.add("active");
+            }
+          });
+      })();
+    </script>
   </body>
 </html>

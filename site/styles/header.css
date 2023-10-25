@@ -36,12 +36,12 @@ nav {
 }
 
 .listWrapper {
-  max-width: 1578px;
+  max-width: 1600px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 16px;
+  border-radius: 4px;
 }
 
 .navigation {
@@ -69,18 +69,18 @@ nav {
   color: #420;
   text-decoration: none;
   transition: scale 120ms ease-in-out, background-color 120ms ease-in-out;
-  border-radius: 16px;
+  border-radius: 300px;
   text-shadow: 0 1px 8px #fff;
 }
 
 .navigation li a.active,
 .navigation li a:hover {
-  scale: 1.05;
+  scale: 1.02;
   background-color: #ffd780;
 }
 
 .navigation li a:hover:not(:active) {
-  scale: 1.08;
+  scale: 1.03;
   background-color: #ffd780bb;
 }
 
@@ -88,7 +88,7 @@ nav {
   .logoLink {
     scale: 1;
     transition: scale 240ms ease-in-out;
-    border-radius: 64px
+    border-radius: 64px;
   }
 
   .logoLink:hover {
@@ -115,9 +115,5 @@ nav {
     height: 56px;
     font-size: 28px;
     line-height: 32px;
-  }
-
-  .listWrapper {
-    margin: 0 16px;
   }
 }
