@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "parcel": "^2.9.3",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "posthtml-modules": "^0.9.1",
     "shx": "^0.3.4"
   }
