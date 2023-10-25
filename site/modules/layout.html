@@ -83,8 +83,10 @@
         document
           .querySelectorAll(".js-navLink")
           .forEach((link) => {
-            if (link.pathname.startsWith(window.location.pathname)
-            || (['/', ''].includes(window.location.pathname) && link.pathname==="/index.html")) {
+            if (
+              (link.pathname.startsWith(window.location.pathname) && link.pathname.endsWith('.html'))
+              || (['/', ''].includes(window.location.pathname) && link.pathname === "/index.html")
+            ) {
                 link.classList.add("active");
             }
           });
