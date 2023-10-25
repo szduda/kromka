@@ -103,7 +103,7 @@ p {
   article {
     flex: 3 1;
     padding: 64px;
-    width: calc(67vw - 72px);
+    width: calc(67dvw - 72px);
     max-width: 960px;
   }
 
