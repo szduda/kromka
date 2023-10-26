@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <a href="index.html" class="logoLink">
+      <a href="/" class="logoLink">
         <img
           src="images/logo.svg"
           width="570"
@@ -31,9 +31,9 @@
       <div class="nav">
         <div class="listWrapper">
           <ul class="navigation">
-            <li><a href="index.html" class="js-navLink">O Mnie</a></li>
-            <li><a href="oferta.html" class="js-navLink">Oferta</a></li>
-            <li><a href="kontakt.html" class="js-navLink">Kontakt</a></li>
+            <li><a href="/" class="js-navLink">O Mnie</a></li>
+            <li><a href="oferta" class="js-navLink">Oferta</a></li>
+            <li><a href="kontakt" class="js-navLink">Kontakt</a></li>
           </ul>
         </div>
       </div>
@@ -83,10 +83,7 @@
         document
           .querySelectorAll(".js-navLink")
           .forEach((link) => {
-            if (
-              (link.pathname.startsWith(window.location.pathname) && link.pathname.endsWith('.html'))
-              || (['/', ''].includes(window.location.pathname) && link.pathname === "/index.html")
-            ) {
+            if (link.pathname === window.location.pathname) {
                 link.classList.add("active");
             }
           });
