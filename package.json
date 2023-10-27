@@ -4,9 +4,7 @@
   "scripts": {
     "start": "parcel",
     "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build --public-url .",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
-    "deploy": "yarn build && yarn push-gh-pages"
+    "build": "parcel build site/*.html --public-url ."
   },
   "devDependencies": {
     "parcel": "^2.9.3",
