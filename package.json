@@ -1,8 +1,7 @@
 {
   "name": "kromka-zdrowia",
-  "source": "site/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel 'site/*.html'",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build site/*.html --public-url ."
   },

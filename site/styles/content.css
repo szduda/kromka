@@ -83,7 +83,7 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: 64px 24px;
-  font-size: 24px;
+  gap: 32px 0;
 }
 
 .boxTower {
@@ -131,7 +131,7 @@ p {
   .box {
     height: 640px;
     padding: 0 32px 0 64px;
-    font-size: 30px;
+    gap: 48px 0;
   }
 }
 

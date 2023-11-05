@@ -29,6 +29,7 @@ main {
 a,
 a:visited {
   color: inherit;
+  display: inline-block;
 }
 
 a:hover {
@@ -39,4 +40,12 @@ a.link,
 a.link:visited {
   display: inline-block;
   color: #9fb50e;
+}
+
+a.inverted {
+  text-decoration: none;
+}
+
+a.inverted:hover {
+  text-decoration: underline;
 }
