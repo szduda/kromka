@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}" />
-    <meta name="og:image" content="og.jpg" />
+    <meta name="og:image" content="images/og.jpg" />
     <link rel="preload" as="image" href="images/food.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +27,7 @@
         />
       </a>
     </header>
+
     <nav>
       <div class="nav">
         <div class="listWrapper">
@@ -38,35 +39,55 @@
         </div>
       </div>
     </nav>
+
     <main>
       <content></content>
     </main>
+
     <footer>
       <div class="footerWrapper">
         <div class="footerCol">
-          <strong>Monika Śmietana</strong>
-          <a href="tel:+48794611604" style="margin-top: 16px" class="inverted">
-            <small class="dim">tel. +48</small> 794 611 604
+          <strong style="letter-spacing: 0.05em; font-size: 2rem"
+            >Monika Śmietana</strong
+          >
+          <a class="footerRow inverted" href="tel:+48794611604">
+            <img
+              src="images/phone.svg"
+              alt="E-mail"
+              style="margin-right: 16px"
+            />
+            <div>
+              <small class="dim">tel. +48</small>
+              <span>&nbsp;794 611 604</span>
+            </div>
           </a>
           <a
+            class="footerRow inverted"
             href="mailto:kontakt.kromkazdrowia@gmail.com"
-            class="inverted"
-            style="
-              display: flex;
-              flex-wrap: wrap;
-              margin-top: 16px;
-              align-items: center;
-            "
           >
-            <span>kontakt.kromkazdrowia</span>
-            <span class="dim">@gmail.com</span>
+            <img
+              src="images/mail.svg"
+              alt="E-mail"
+              style="margin-right: 16px"
+            />
+
+            <div style="display: flex; flex-wrap: wrap; align-items: center">
+              <span>kontakt.kromkazdrowia</span>
+              <span class="dim">@gmail.com</span>
+            </div>
           </a>
         </div>
         <div class="footerCol">
           <strong class="dim">Gabinet przyjęć</strong>
           <address class="contact" style="margin-top: 16px">
-            28 Pułku Artylerii Lekkiej 7A<br />
-            26-922 Zajezierze k. Dęblina
+            <a
+              href="https://www.google.com/maps/place/28+Pu%C5%82ku+Artylerii+Lekkiej+7A,+26-922+Zajezierze/"
+              target="_blank"
+              class="inverted"
+            >
+              28 Pułku Artylerii Lekkiej 7A<br />
+              26-922 Zajezierze k. Dęblina
+            </a>
             <p class="dim">budynek przychodni Eltermed</p>
           </address>
         </div>
@@ -79,6 +100,7 @@
         />
       </div>
     </footer>
+
     <script lang="javascript">
       (function () {
         document
