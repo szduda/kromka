@@ -39,7 +39,19 @@ footer > * {
   padding: 24px 24px 0;
   height: 172px;
   width: min-content;
-  align-self: flex-end;
+  align-self: center;
+}
+
+.footerBottomRow {
+  margin: 48px 24px 0;
+  font-size: small;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.separator {
+  padding: 0 6px;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,5 +67,11 @@ footer > * {
 
   .footerLogo {
     padding: 0 64px 24px;
+    align-self: flex-end;
+  }
+
+  .footerBottomRow {
+    text-align: right;
+    margin-top: 0;
   }
 }

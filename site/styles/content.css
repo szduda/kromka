@@ -71,10 +71,25 @@ h4 {
   opacity: 0.5;
 }
 
-p {
+p, .list li {
   margin: 24px 0 0;
   font-size: 20px;
   line-height: 32px;
+}
+
+.list li {
+  list-style-position: inside;
+  font-weight: bold;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.list li + p {
+  margin-top: 2px;
+}
+
+.listCondensed li {
+  margin-top: 4px;
 }
 
 .box {

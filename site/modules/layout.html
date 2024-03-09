@@ -99,6 +99,11 @@
           alt="Logo: jabłko w kształcie kromki chleba"
         />
       </div>
+      <div class="footerBottomRow">
+        <a href="/polityka-prywatnosci">Polityka Prywatności</a>
+        <span class="separator">|</span>
+        <span id="currentYear">2024</span> &copy; kromkazdrowia.pl
+      </div>
     </footer>
 
     <script lang="javascript">
@@ -110,6 +115,10 @@
                 link.classList.add("active");
             }
           });
+
+        document
+          .querySelector("#currentYear")
+          .textContent = new Date().getFullYear();
       })();
     </script>
   </body>
